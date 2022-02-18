@@ -1,0 +1,4 @@
+{
+    "mongoUri":"mongodb+srv://nejmiti:Nejmi2021@social.goohm.mongodb.net/social?retryWrites=true&w=majority",
+    "jwtSecret":"mysecretissocomplicatedandnoonecanfigureitoutwonderful!"
+}

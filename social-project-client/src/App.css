@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*navigation bar*/
+
+.navbar {
+  background-color: rgba(15, 32, 58, 0.5);
+}
+.navbar-brand span {
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  background-color: rgb(21, 113, 218);
+  color: #fff;
+  padding: 5px;
+}
+.search {
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  padding: 5px;
+}
+.search-icon {
+  position: relative;
+  bottom: 37px;
+  right: 40px;
+}
+.signout:hover {
+  background-color: green;
+}
+/* login form*/
+.form-header {
+  color: rgba(17, 14, 190, 0.8);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.form-par {
+  color: rgba(17, 14, 190, 0.8);
+  font-family: cursive;
+  font-weight: bold;
+}
+.loginButton {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  background: #3399ff;
+  border: 1px solid #888;
+
+  margin-top: 70px;
+}
+.registerButton {
+  margin-top: 20px;
+
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  background: #3399ff;
+  border: 1px solid #888;
+}
+
+.formContainer {
+  position: relative;
+  top: 20px;
+  padding: 10px;
+}
+
+form {
+  border: 1px solid #999;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+.inbox-container {
+  padding: 20px;
+}
+.inbox-container input {
+  text-align: center;
+  margin: 10px;
+
+  height: 30px;
+  width: 180px;
+  background-color: #d9d9d9;
+}
+.userBox {
+}
+.emailBox {
+  margin-left: 30px;
+}
+
+.home {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 800px;
+  /*background: linear-gradient(
+    to left,
+    rgb(51, 51, 51),
+    #33ffcc,
+    #3399ff,
+    #838383
+  );
+  
+}*/
+  background: #d8d8d8;
+}
+
+/*profile */
+.profile-container {
+  background-color: #ebecf0;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-wall {
+  margin-top: 40px;
+  height: 200px;
+  width: 45%;
+  border: 1px solid #fafafa;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.profile-wall .post-input {
+  margin-top: 30px;
+  width: 85%;
+}
+.user-icon {
+  position: relative;
+  left: 5px;
+}
+.post-input {
+  height: 40px;
+  width: 300px;
+  border: none;
+  background-color: #d3d3d3;
+  border-radius: 25px;
+  margin: 20px;
+}
+.post {
+  position: relative;
+  text-align: center;
+  bottom: 30px;
+}
+
+.wall-post {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+
+  border: 2px solid #fafafa;
+
+  background-color: #fff;
+
+  border-radius: 25px;
+}
+.wall-post > p {
+  text-align: center;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.wall-post .post-comment {
+  list-style-type: none;
+}
+.wall-post .username,
+.wall-post .post-added {
+  font-size: 18px;
+}
+.icons-row .icons {
+}
+
+.users-icon .user-icon {
+  position: relative;
+  left: -25%;
+  padding: 10px;
+  border: 1px solid #3a3131;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+}
+.users-icon .username {
+  position: relative;
+  right: 23%;
+}
+
+.users-icon .three-dots {
+  position: relative;
+  right: -30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .users-icon .user-icon {
+    position: relative;
+    left: -12%;
+    padding: 10px;
+    border: 1px solid #3a3131;
+    border-radius: 50%;
+    background-color: #f4f0ec;
+  }
+  .users-icon .username {
+    position: relative;
+    right: 10%;
+  }
+  .users-icon .three-dots {
+    position: relative;
+    left: 12%;
+  }
+}
