@@ -1,4 +1,6 @@
-{
-    "mongoUri":"mongodb+srv://nejmiti:Nejmi2021@social.goohm.mongodb.net/social?retryWrites=true&w=majority",
-    "jwtSecret":"mysecretissocomplicatedandnoonecanfigureitoutwonderful!"
-}
+
+ {
+    "mongoUri":"mongodb+srv://nejmiti:nejmi123@social.goohm.mongodb.net/social-project?retryWrites=true&w=majority",
+   "jwtSecret" :"thisismydeepsecretthatiamnotgoingtotellyou"
+
+   } 
