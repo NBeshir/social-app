@@ -105,17 +105,29 @@ form {
 }
 
 /*profile */
+
 .profile-container {
   background-color: #ebecf0;
 
   max-width: 100%;
   height: auto;
 }
+/*.profile-wall {
+  position: absolute;
+  top: 20%;
+
+  left: 30%;
+  height: 200px;
+  width: 45%;
+  border: 1px solid #fafafa;
+  background-color: #fff;
+  border-radius: 25px;
+}*/
 
 .profile-wall {
   margin-top: 40px;
   height: 200px;
-  width: 45%;
+  width: 400px;
   border: 1px solid #fafafa;
   background-color: #fff;
   border-radius: 25px;
@@ -140,6 +152,12 @@ form {
   position: relative;
   text-align: center;
   bottom: 30px;
+}
+.post-button {
+  text-align: center;
+  width: 150px;
+  position: relative;
+  left: 35%;
 }
 
 .wall-post {
@@ -203,5 +221,8 @@ form {
   .users-icon .three-dots {
     position: relative;
     left: 12%;
+  }
+  .wall-post {
+    width: 40%;
   }
 }

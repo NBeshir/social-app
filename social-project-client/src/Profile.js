@@ -130,22 +130,26 @@ const req = await fetch('http://localhost:5000/profile', {
    
         <div className="profile-container ">
             <Navigation/>
+            <div className="">
+
+                <form onSubmit={this.onSubmitPost} className="profile-wall mx-auto">
+                  
+                      <input type="text" 
+                              className="text-center post-input" 
+                              value={this.state.tempPost} 
+                              placeholder= {`What's on your mind , ${fname} ?`}
+                              onChange={this.onChangePost}
+                              /> <hr/>
+                        <input type="submit" value="Post" className="btn btn-primary mt-3 mx-auto post-button" />
+                    </form>
+            </div>
             
-              <form onSubmit={this.onSubmitPost} className="profile-wall ">
-               
-                 <input type="text" 
-                        className="text-center post-input" 
-                        value={this.state.tempPost} 
-                        placeholder= {`What's on your mind , ${fname} ?`}
-                        onChange={this.onChangePost}
-                        /> <hr/>
-                  <input type="submit" value="Post" className="btn btn-primary mt-3 " />
-              </form>
+              
                 
                
             
              
-                <div className='col-6 col-sm col-md mx-auto' >
+                <div className='col-5 col mx-auto' >
                   <p> {post}</p>
                 </div>
                

@@ -69,37 +69,48 @@ else{
 
   render() {
     
-    return <div>
-        <h1 className="m-5 form-header"> social connect</h1>
-        <p className="m-2 form-par"> Where you connect with people</p>
-             <div className = "formContainer " >
-                    <form onSubmit={this.loginUsers}>
-                        <h1>Log In</h1>
-                      
-                        <div className="inbox-container">
-                            
-                            <div className="emailBox"> 
-                                <label htmlFor="email">Email</label>
-                                <input name="email" type="email" className= "emailInput" onChange={this.onChangeHandler} required/>
-                               
-                            </div>
-                           
-                            <div className="passwordBox"> 
-                                <label htmlFor="password">Password</label>
-                                <input name="password" type="password" className= "passwordInput" onChange={this.onChangeHandler}  required/>
-                            </div>
-                           
+    return <div className="container ">
+                        <div className="row">
+                                <div className="col text-center">
+
+                                        <h1 className="m-5 form-header col "> social connect</h1>
+                                            <p className="m-2 form-par col"> Where you connect with people</p>
+                                </div>
                         </div>
-                     
-                       
-                        <input type="submit"  className="loginButton btn btn-primary mt-5 "  value="Log In"/>
-                        
-                    </form>
-                    <p> Don't have an account?</p>
-                    <Link to = '/register'  className="registerButton btn btn-primary text-center">Register</Link>
-         </div>          
+                        <div className="row">
+                                <div className = "formContainer col text-center" >
+                                        <form onSubmit={this.loginUsers} className="">
+                                            <h1>Log In</h1>
+                                        
+                                            <div className="inbox-container">
+                                                
+                                                <div className="emailBox"> 
+                                                    <label htmlFor="email">Email</label>
+                                                    <input name="email" type="email" className= "emailInput" onChange={this.onChangeHandler} required/>
+                                                
+                                                </div>
+                                            
+                                                <div className="passwordBox"> 
+                                                    <label htmlFor="password">Password</label>
+                                                    <input name="password" type="password" className= "passwordInput" onChange={this.onChangeHandler}  required/>
+                                                </div>
+                                            
+                                            </div>
+                                        
+                                        
+                                            <input type="submit"  className="loginButton btn btn-primary mt-5 "  value="Log In"/>
+                                            
+                                        </form>
+                                        <p> Don't have an account?</p>
+                                        <Link to = '/register'  className="registerButton btn btn-primary text-center">Register</Link>
+                            </div>          
+                        </div>
+                            
+
+        </div>;
+        
                 
-    </div>;
+   
   }
 }
 
